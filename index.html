@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Dream Africa - Empowering Africa Through Technology</title>
+    <meta name="description" content="Tech Dream Africa provides cutting-edge technology solutions, software development, and digital transformation services across Africa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#0ea5e9',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">
+                        <i class="fas fa-rocket mr-2"></i>Tech Dream Africa
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-primary font-semibold transition">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-primary font-semibold transition">About</a>
+                    <a href="services.html" class="text-gray-800 hover:text-primary font-semibold transition">Services</a>
+                    <a href="portfolio.html" class="text-gray-800 hover:text-primary font-semibold transition">Portfolio</a>
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Home</a>
+                <a href="about.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">About</a>
+                <a href="services.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Services</a>
+                <a href="portfolio.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Portfolio</a>
+                <a href="contact.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Empowering Africa Through <span class="text-accent">Technology</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100">
+                        Transform your business with innovative technology solutions tailored for the African market.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="contact.html" class="bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-yellow-600 transition text-center">
+                            Get Started
+                        </a>
+                        <a href="services.html" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition text-center">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-96 md:h-96 bg-blue-500 rounded-full opacity-20 absolute animate-pulse"></div>
+                        <i class="fas fa-laptop-code text-9xl md:text-[12rem] relative z-10"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive technology solutions for your business</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="text-5xl text-primary mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Software Development</h3>
+                    <p class="text-gray-600 mb-4">
+                        Custom software solutions built with cutting-edge technologies to meet your unique business needs.
+                    </p>
+                    <a href="services.html#software" class="text-primary font-semibold hover:underline">Learn More →</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="text-5xl text-secondary mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Mobile App Development</h3>
+                    <p class="text-gray-600 mb-4">
+                        Native and cross-platform mobile applications that engage users and drive business growth.
+                    </p>
+                    <a href="services.html#mobile" class="text-primary font-semibold hover:underline">Learn More →</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="text-5xl text-accent mb-4">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Cloud Solutions</h3>
+                    <p class="text-gray-600 mb-4">
+                        Scalable cloud infrastructure and migration services to optimize your business operations.
+                    </p>
+                    <a href="services.html#cloud" class="text-primary font-semibold hover:underline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Why Choose Tech Dream Africa?</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-3xl text-primary mr-4">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">African Expertise</h3>
+                                <p class="text-gray-600">Deep understanding of the African market and business landscape.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-3xl text-primary mr-4">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Cutting-Edge Technology</h3>
+                                <p class="text-gray-600">We use the latest technologies and best practices in software development.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-3xl text-primary mr-4">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Dedicated Support</h3>
+                                <p class="text-gray-600">24/7 support and maintenance to ensure your success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-primary text-white p-8 rounded-lg text-center">
+                            <div class="text-4xl font-bold mb-2">100+</div>
+                            <div class="text-sm">Projects Delivered</div>
+                        </div>
+                        <div class="bg-secondary text-white p-8 rounded-lg text-center">
+                            <div class="text-4xl font-bold mb-2">50+</div>
+                            <div class="text-sm">Happy Clients</div>
+                        </div>
+                        <div class="bg-accent text-white p-8 rounded-lg text-center">
+                            <div class="text-4xl font-bold mb-2">15+</div>
+                            <div class="text-sm">Countries Served</div>
+                        </div>
+                        <div class="bg-green-600 text-white p-8 rounded-lg text-center">
+                            <div class="text-4xl font-bold mb-2">98%</div>
+                            <div class="text-sm">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Let's build something amazing together. Get in touch with us today!
+            </p>
+            <a href="contact.html" class="bg-accent text-white px-10 py-4 rounded-full font-semibold hover:bg-yellow-600 transition inline-block">
+                Start Your Project
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-rocket mr-2"></i>Tech Dream Africa</h3>
+                    <p class="text-gray-400">Empowering Africa through innovative technology solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#software" class="text-gray-400 hover:text-white transition">Software Development</a></li>
+                        <li><a href="services.html#mobile" class="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
+                        <li><a href="services.html#cloud" class="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
+                        <li><a href="services.html#consulting" class="text-gray-400 hover:text-white transition">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="text-gray-400">
+                        <i class="fas fa-envelope mr-2"></i>info@techdreamafrica.org
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 Tech Dream Africa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

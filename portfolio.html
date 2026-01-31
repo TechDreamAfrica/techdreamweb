@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tech Dream Africa</title>
+    <meta name="description" content="Explore Tech Dream Africa's portfolio of successful projects and client success stories.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#0ea5e9',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">
+                        <i class="fas fa-rocket mr-2"></i>Tech Dream Africa
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-primary font-semibold transition">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-primary font-semibold transition">About</a>
+                    <a href="services.html" class="text-gray-800 hover:text-primary font-semibold transition">Services</a>
+                    <a href="portfolio.html" class="text-gray-800 hover:text-primary font-semibold transition">Portfolio</a>
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Home</a>
+                <a href="about.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">About</a>
+                <a href="services.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Services</a>
+                <a href="portfolio.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Portfolio</a>
+                <a href="contact.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-4">Our Portfolio</h1>
+            <p class="text-xl text-blue-100">Showcasing our successful projects and client partnerships</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 bg-white border-b">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="portfolio-filter px-6 py-2 rounded-full bg-primary text-white font-semibold" data-filter="all">All Projects</button>
+                <button class="portfolio-filter px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300" data-filter="web">Web Development</button>
+                <button class="portfolio-filter px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300" data-filter="mobile">Mobile Apps</button>
+                <button class="portfolio-filter px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300" data-filter="cloud">Cloud Solutions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="web">
+                    <div class="h-48 bg-gradient-to-br from-primary to-blue-700 flex items-center justify-center">
+                        <i class="fas fa-shopping-cart text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">Web Development</span>
+                            <span class="text-gray-500 text-sm">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">AfriMart E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            A comprehensive e-commerce solution enabling African vendors to sell globally with integrated payment systems.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">React</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Node.js</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="mobile">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-cyan-700 flex items-center justify-center">
+                        <i class="fas fa-heartbeat text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-secondary text-white text-xs px-3 py-1 rounded-full">Mobile App</span>
+                            <span class="text-gray-500 text-sm">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">HealthConnect Mobile App</h3>
+                        <p class="text-gray-600 mb-4">
+                            Telemedicine app connecting patients with healthcare providers across East Africa.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">React Native</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Firebase</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Stripe</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="cloud">
+                    <div class="h-48 bg-gradient-to-br from-accent to-yellow-700 flex items-center justify-center">
+                        <i class="fas fa-cloud-upload-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-accent text-white text-xs px-3 py-1 rounded-full">Cloud Solutions</span>
+                            <span class="text-gray-500 text-sm">2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Enterprise Cloud Migration</h3>
+                        <p class="text-gray-600 mb-4">
+                            Migrated large financial institution's infrastructure to AWS with zero downtime.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">AWS</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Terraform</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Docker</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="web">
+                    <div class="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-green-600 text-white text-xs px-3 py-1 rounded-full">Web Development</span>
+                            <span class="text-gray-500 text-sm">2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">EduLearn Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            Online learning management system serving over 50,000 students across Africa.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Vue.js</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Django</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="mobile">
+                    <div class="h-48 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
+                        <i class="fas fa-money-bill-wave text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Mobile App</span>
+                            <span class="text-gray-500 text-sm">2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">PayWave Fintech App</h3>
+                        <p class="text-gray-600 mb-4">
+                            Mobile payment solution processing over $10M in transactions monthly.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Flutter</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Node.js</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">MySQL</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="web">
+                    <div class="h-48 bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center">
+                        <i class="fas fa-utensils text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-red-600 text-white text-xs px-3 py-1 rounded-full">Web Development</span>
+                            <span class="text-gray-500 text-sm">2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">FoodHub Delivery Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            Restaurant aggregator and delivery platform with real-time tracking.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Angular</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Express</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Redis</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">What Our Clients Say</h2>
+            <p class="text-xl text-gray-600 text-center mb-12">Real feedback from satisfied clients</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "Tech Dream Africa delivered beyond our expectations. Their team's expertise in cloud migration saved us significant costs while improving our system performance."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            JK
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">James Kimani</p>
+                            <p class="text-sm text-gray-600">CTO, FinanceHub Ltd</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "The mobile app they built for us has transformed how we connect with our customers. The user experience is fantastic and our engagement rates have tripled."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            AN
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Aisha Nkrumah</p>
+                            <p class="text-sm text-gray-600">CEO, RetailPro Ghana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "Professional, responsive, and incredibly skilled. They took the time to understand our business needs and delivered a solution that perfectly fits our requirements."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            PM
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Peter Mwangi</p>
+                            <p class="text-sm text-gray-600">Director, EduSmart Kenya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold mb-2">150+</div>
+                    <div class="text-blue-100">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">80+</div>
+                    <div class="text-blue-100">Happy Clients</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">20+</div>
+                    <div class="text-blue-100">Countries Served</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">99%</div>
+                    <div class="text-blue-100">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Ready to Start Your Project?</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Let's collaborate to bring your vision to life.
+            </p>
+            <a href="contact.html" class="bg-primary text-white px-10 py-4 rounded-full font-semibold hover:bg-blue-700 transition inline-block">
+                Get Started Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-rocket mr-2"></i>Tech Dream Africa</h3>
+                    <p class="text-gray-400">Empowering Africa through innovative technology solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#software" class="text-gray-400 hover:text-white transition">Software Development</a></li>
+                        <li><a href="services.html#mobile" class="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
+                        <li><a href="services.html#cloud" class="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
+                        <li><a href="services.html#consulting" class="text-gray-400 hover:text-white transition">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="text-gray-400">
+                        <i class="fas fa-envelope mr-2"></i>info@techdreamafrica.org
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 Tech Dream Africa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
