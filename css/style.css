@@ -688,7 +688,92 @@ html.dark .ms-subtext { color:var(--txt-on-dark-muted); }
 /* ================================================================
    26. Responsive
    ================================================================ */
+
+/* --- Global: prevent horizontal scroll on all screens --- */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; max-width: 100vw; }
+img, video, iframe, table { max-width: 100%; }
+
+/* --- 768px — tablet and below --- */
 @media(max-width:768px){
+  /* Feature Spotlight — stack vertically, icon panel first */
+  .ms-feature { grid-template-columns: 1fr; }
+  .ms-feature > .ms-feature-visual { order: -1; min-height: 220px; font-size: 3.75rem; }
+  .ms-feature-content { padding: 2rem 1.5rem; }
+  /* Nav glass shrink */
+  .nav-glass h1, .nav-glass .heading-xl { font-size: 1.25rem; }
+  /* Announcement bar keep single line */
+  .ms-announce { white-space: normal; font-size: 0.72rem; padding: 0.4rem 2.5rem 0.4rem 0.75rem; }
+  /* Ensure wide tiles don't overflow */
+  .ms-tile-visual { height: 160px; }
+  .portfolio-thumb { height: 160px; }
+  /* Tech panel grid tighter */
+  .tech-panel { grid-template-columns: repeat(3, 1fr) !important; }
+  .tech-icon { font-size: 1.625rem; }
+  /* Industry cards */
+  .industry-card { padding: 1rem 0.75rem; }
+  /* FAQ font */
+  .faq-btn { font-size: 0.875rem; }
+}
+
+/* --- 640px — large phone and below --- */
+@media(max-width:640px){
+  /* Stats bar — 2 wide on small phones */
+  .ms-stat-bar { grid-template-columns: repeat(2, 1fr); }
+  .ms-stat-cell { padding: 1.75rem 1rem; }
+  .stat-number { font-size: 2rem !important; }
+  /* Feature spotlight further reduce */
+  .ms-feature > .ms-feature-visual { min-height: 180px; font-size: 3rem; }
+  .ms-feature-content { padding: 1.75rem 1.25rem; }
+  /* Remove large section vertical padding on phone */
+  .section-subtitle { font-size: 0.9375rem; }
+  /* Tile body tighter */
+  .ms-tile-body { padding: 1rem 1.125rem 1.25rem; }
+  /* Footer brand text */
+  .footer-bg p { font-size: 0.8125rem; }
+  /* Mobile menu panel full width */
+  .mobile-menu-panel { width: 100vw; }
+  /* Process step connector hide */
+  .process-connector { display: none; }
+  /* Word wrap long URLs / words */
+  .faq-inner, .ms-feature-body, .ms-tile-desc, p { overflow-wrap: break-word; word-break: break-word; }
+}
+
+/* --- 480px — small phones (iPhone SE etc) --- */
+@media(max-width:480px){
+  .ms-feature > .ms-feature-visual { min-height: 150px; font-size: 2.5rem; }
+  .ms-feature-content { padding: 1.5rem 1rem; }
+  /* Scale down MS stat numbers */
+  .ms-stat-cell { padding: 1.25rem 0.625rem; }
+  .stat-number { font-size: 1.75rem !important; }
+  /* Tile visual shorter */
+  .ms-tile-visual { height: 140px; }
+  .portfolio-thumb { height: 140px; }
+  /* Portfolio tech tags wrap */
+  .portfolio-card .flex { flex-wrap: wrap; }
+  /* Buttons full width in hero CTA stack */
+  .hero-cta-stack { flex-direction: column; }
+  .hero-cta-stack .btn-ms { width: 100%; justify-content: center; }
+  /* Reduce section badge text */
+  .section-badge { font-size: 0.6875rem; }
+  /* Tighten FAQ */
+  .faq-btn { padding: 0.875rem 1rem; font-size: 0.8125rem; }
+  .faq-inner { padding-bottom: 0.875rem; }
+  /* Tech panel 2 columns on tiny screens */
+  .tech-panel { grid-template-columns: repeat(2, 1fr) !important; }
+  /* Announcement bar even more compact */
+  .ms-announce { font-size: 0.6875rem; }
+  /* MS heading scale */
+  .ms-heading { font-size: 1.5rem; }
+  .ms-feature-title { font-size: 1.375rem; }
+  /* Reduce hero logo slightly */
+  .hero-logo-img { height: 3.5rem; }
+}
+
+/* --- Ensure testimonials and cards don't overflow --- */
+@media(max-width:640px){
+  .testimonial-slide .card { padding: 1.25rem; }
+  .card-inner-lg { padding: 1.25rem; }
 }
 
 /* Reduce Motion */
