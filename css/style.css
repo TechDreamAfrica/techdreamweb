@@ -195,15 +195,6 @@ html.dark .btn-outline:hover { border-color: var(--clr-primary); color: var(--cl
 .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
 html.dark .card { background: var(--bg-dark-card); border-color: var(--border-dark); }
 
-.card-glass {
-  background: rgba(255,255,255,.7);
-  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255,255,255,.35);
-  border-radius: var(--r-xl);
-  box-shadow: var(--shadow-xl);
-}
-html.dark .card-glass { background: rgba(30,41,59,.7); border-color: rgba(255,255,255,.07); }
-
 /* ================================================================
    8. Icon Badges
    ================================================================ */
@@ -264,17 +255,13 @@ html.dark .section-subtitle { color: var(--txt-on-dark-muted); }
 @keyframes fadeLeft { from{opacity:0;transform:translateX(-24px)} to{opacity:1;transform:none} }
 @keyframes fadeRight{ from{opacity:0;transform:translateX(24px)} to{opacity:1;transform:none} }
 @keyframes scaleIn  { from{opacity:0;transform:scale(.94)} to{opacity:1;transform:scale(1)} }
-@keyframes float    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
 @keyframes pulse-ring {
   0%{transform:scale(1);opacity:.7}
   100%{transform:scale(1.7);opacity:0}
 }
 @keyframes marquee  { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-@keyframes blink    { 50%{opacity:0} }
 @keyframes spin     { to{transform:rotate(360deg)} }
 
-.animate-float         { animation: float 4s ease-in-out infinite; }
-.animate-float-delay   { animation: float 4s ease-in-out 1.5s infinite; }
 .animate-marquee       { animation: marquee 30s linear infinite; }
 .animate-marquee:hover { animation-play-state: paused; }
 .animate-spin-slow     { animation: spin 8s linear infinite; }
@@ -301,45 +288,6 @@ html.dark .section-subtitle { color: var(--txt-on-dark-muted); }
   background: linear-gradient(150deg, #1E3A8A 0%, #1E40AF 55%, #1d4ed8 100%);
   position: relative; overflow: hidden;
 }
-.hero-glow-1,.hero-glow-2,.hero-grid { display:none; }
-/* Glassmorphism foreground panel */
-.hero-glass-panel {
-  background:rgba(255,255,255,.04);
-  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:var(--r-2xl); padding:2.5rem;
-}
-
-/* Code Editor Mock */
-.code-editor {
-  background:#1E293B;
-  border-radius:var(--r-xl);
-  border:1px solid #334155;
-  box-shadow:var(--shadow-2xl);
-  overflow:hidden;
-}
-.code-editor-bar {
-  background:#0F172A;
-  padding:.625rem 1rem;
-  display:flex; align-items:center; gap:.5rem;
-  border-bottom:1px solid #334155;
-}
-.code-dot { width:10px; height:10px; border-radius:50%; }
-.code-body {
-  padding:1.25rem 1.5rem;
-  font-family:'Fira Code','JetBrains Mono','Courier New',monospace;
-  font-size:.78rem; line-height:1.9;
-}
-.cl { display:flex; gap:.875rem; }
-.cn { color:#475569; min-width:1.25rem; text-align:right; user-select:none; }
-.ck { color:#C084FC; }
-.cf { color:#60A5FA; }
-.cs { color:#34D399; }
-.cc { color:#475569; font-style:italic; }
-.co { color:#F59E0B; }
-.cv { color:#F8FAFC; }
-.cursor::after { content:'|'; animation:blink 1s step-end infinite; color:#60A5FA; }
-
 /* ================================================================
    12. Stats Section
    ================================================================ */
@@ -741,7 +689,6 @@ html.dark .ms-subtext { color:var(--txt-on-dark-muted); }
    26. Responsive
    ================================================================ */
 @media(max-width:768px){
-  .hero-glass-panel { padding:1.5rem; }
 }
 
 /* Reduce Motion */
