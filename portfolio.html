@@ -1,393 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Tech Dream Africa</title>
-    <meta name="description" content="Explore Tech Dream Africa's portfolio of successful projects and client success stories.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1e40af',
-                        secondary: '#0ea5e9',
-                        accent: '#f59e0b',
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Tech Dream Africa | Case Studies &amp; Projects</title>
+  <meta name="description" content="Explore Tech Dream Africa's portfolio of successful projects — mobile apps, web platforms, AI solutions, ERP systems, and more across Africa.">
+  <link rel="canonical" href="https://techdreamafrica.org/portfolio.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#1E40AF',accent:'#DC2626',success:'#10B981'}}}}</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-sans antialiased">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-2xl font-bold text-primary">
-                        <i class="fas fa-rocket mr-2"></i>Tech Dream Africa
-                    </a>
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-800 hover:text-primary font-semibold transition">Home</a>
-                    <a href="about.html" class="text-gray-800 hover:text-primary font-semibold transition">About</a>
-                    <a href="services.html" class="text-gray-800 hover:text-primary font-semibold transition">Services</a>
-                    <a href="portfolio.html" class="text-gray-800 hover:text-primary font-semibold transition">Portfolio</a>
-                    <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Contact Us</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-            
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-                <a href="index.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Home</a>
-                <a href="about.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">About</a>
-                <a href="services.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Services</a>
-                <a href="portfolio.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Portfolio</a>
-                <a href="contact.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Contact Us</a>
-            </div>
+<body class="font-sans antialiased bg-[#F8FAFC] dark:bg-[#0F172A] text-slate-900 dark:text-slate-100">
+
+<a id="whatsapp-float" href="https://wa.me/233597458456" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu-overlay" class="mobile-menu-overlay">
+  <div id="mobile-menu-backdrop" class="mobile-menu-backdrop"></div>
+  <nav class="mobile-menu-panel">
+    <div class="flex items-center justify-between mb-6">
+      <span class="text-lg font-bold text-primary">Tech Dream Africa</span>
+      <button id="mobile-menu-close" class="text-slate-500 p-1"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <a href="portfolio.html" class="mobile-nav-link" aria-current="page">Portfolio</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <div class="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+      <a href="contact.html" class="btn-ms btn-ms-blue w-full justify-center">Get Started</a>
+    </div>
+  </nav>
+</div>
+
+<!-- Navigation -->
+<header id="main-nav" class="nav-glass ms-nav-flat fixed top-0 left-0 right-0 z-[100]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <div class="ms-logo-grid" style="width:28px;height:28px;gap:2px;">
+          <div style="background:#4FC3F7;"></div><div style="background:#EF5350;"></div>
+          <div style="background:#66BB6A;"></div><div style="background:#FFA726;"></div>
         </div>
+        <span class="font-bold text-[15px] text-slate-900 dark:text-white">Tech Dream <span class="text-primary">Africa</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="btn-ms btn-ms-blue hidden md:inline-flex">Get Started</a>
+        <button id="mobile-menu-open" class="md:hidden w-9 h-9 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page Header -->
+<section class="hero-section pt-16 py-24">
+  <div class="hero-glow-1"></div><div class="hero-grid"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <nav class="flex justify-center mb-6" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2 text-sm text-slate-500">
+        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+        <li><i class="fas fa-chevron-right text-xs"></i></li>
+        <li class="text-slate-300">Portfolio</li>
+      </ol>
     </nav>
+    <div class="section-badge mb-4 reveal" style="background:rgba(37,99,235,.15);color:#93C5FD"><i class="fas fa-briefcase"></i> Our Work</div>
+    <h1 class="display-lg text-white mb-5 reveal delay-1">100+ Projects That Define<br>Our Engineering Excellence</h1>
+    <p class="body-lg text-slate-400 max-w-2xl mx-auto reveal delay-2">From fintech platforms to government systems, AI tools to mobile apps — here is a selection of the impactful work we have delivered across Africa.</p>
+    <div class="flex flex-wrap justify-center gap-6 mt-10 reveal delay-3">
+      <div class="text-center"><div class="text-2xl font-extrabold text-white">100+</div><div class="text-xs text-slate-500">Projects</div></div>
+      <div class="w-px bg-slate-700"></div>
+      <div class="text-center"><div class="text-2xl font-extrabold text-white">15+</div><div class="text-xs text-slate-500">Countries</div></div>
+      <div class="w-px bg-slate-700"></div>
+      <div class="text-center"><div class="text-2xl font-extrabold text-white">12</div><div class="text-xs text-slate-500">Industries</div></div>
+      <div class="w-px bg-slate-700"></div>
+      <div class="text-center"><div class="text-2xl font-extrabold text-white">98%</div><div class="text-xs text-slate-500">On-Time Delivery</div></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Page Header -->
-    <section class="pt-32 pb-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl font-bold mb-4">Our Portfolio</h1>
-            <p class="text-xl text-blue-100">Showcasing our successful projects and client partnerships</p>
+<!-- Filter + Grid -->
+<section class="py-16 bg-[#F8FAFC] dark:bg-[#0F172A]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Filter Tabs -->
+    <div class="flex flex-wrap gap-2 mb-10 reveal">
+      <button class="portfolio-filter tech-tab active" data-filter="all">All Projects</button>
+      <button class="portfolio-filter tech-tab" data-filter="ai">AI / ML</button>
+      <button class="portfolio-filter tech-tab" data-filter="fintech">FinTech</button>
+      <button class="portfolio-filter tech-tab" data-filter="web">Web Apps</button>
+      <button class="portfolio-filter tech-tab" data-filter="ngo">NGO</button>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+
+      <!-- 1: Dream AI -->
+      <div class="portfolio-card portfolio-item reveal delay-1" data-category="ai">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#1E3A8A,#4C1D95);">
+          <i class="fas fa-robot" style="color:rgba(255,255,255,.9)"></i>
         </div>
-    </section>
-
-    <!-- Filter Section -->
-    <section class="py-8 bg-white border-b">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-wrap justify-center gap-4">
-                <button class="portfolio-filter px-6 py-2 rounded-full bg-primary text-white font-semibold" data-filter="all">All Projects</button>
-                <button class="portfolio-filter px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300" data-filter="web">Web Development</button>
-                <button class="portfolio-filter px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300" data-filter="mobile">Mobile Apps</button>
-                <button class="portfolio-filter px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300" data-filter="cloud">Cloud Solutions</button>
-            </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="tag tag-blue">AI / ML</span>
+            <span class="tag tag-gray">SaaS</span>
+          </div>
+          <h3 class="heading-md mb-2">Dream AI — Multi-Agent AI Platform</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-3">Multi-agent AI platform hosting 8 intelligent agents — UEW AI Assistant, SWESCO AI, Carl wellness companion, event ticketing, real-time fraud detection, bulk SMS, and more.</p>
+          <div class="text-xs text-slate-400 mb-3 space-y-1">
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Sector:</span> EdTech, HealthTech, FinTech, Events</div>
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Highlight:</span> 8 active agents with RAG &amp; WhatsApp integration</div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="tag tag-gray">Python</span>
+            <span class="tag tag-gray">Django</span>
+            <span class="tag tag-gray">RAG</span>
+            <span class="tag tag-gray">WebSocket</span>
+          </div>
+          <a href="https://www.dreamailts.com/" target="_blank" rel="noopener" class="ms-tile-link">Visit site <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
         </div>
-    </section>
+      </div>
 
-    <!-- Portfolio Grid -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Project 1 -->
-                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="web">
-                    <div class="h-48 bg-gradient-to-br from-primary to-blue-700 flex items-center justify-center">
-                        <i class="fas fa-shopping-cart text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">Web Development</span>
-                            <span class="text-gray-500 text-sm">2025</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">AfriMart E-Commerce Platform</h3>
-                        <p class="text-gray-600 mb-4">
-                            A comprehensive e-commerce solution enabling African vendors to sell globally with integrated payment systems.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">React</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Node.js</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">MongoDB</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="mobile">
-                    <div class="h-48 bg-gradient-to-br from-secondary to-cyan-700 flex items-center justify-center">
-                        <i class="fas fa-heartbeat text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-secondary text-white text-xs px-3 py-1 rounded-full">Mobile App</span>
-                            <span class="text-gray-500 text-sm">2025</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">HealthConnect Mobile App</h3>
-                        <p class="text-gray-600 mb-4">
-                            Telemedicine app connecting patients with healthcare providers across East Africa.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">React Native</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Firebase</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Stripe</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="cloud">
-                    <div class="h-48 bg-gradient-to-br from-accent to-yellow-700 flex items-center justify-center">
-                        <i class="fas fa-cloud-upload-alt text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-accent text-white text-xs px-3 py-1 rounded-full">Cloud Solutions</span>
-                            <span class="text-gray-500 text-sm">2024</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Enterprise Cloud Migration</h3>
-                        <p class="text-gray-600 mb-4">
-                            Migrated large financial institution's infrastructure to AWS with zero downtime.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">AWS</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Terraform</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Docker</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="web">
-                    <div class="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
-                        <i class="fas fa-graduation-cap text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-green-600 text-white text-xs px-3 py-1 rounded-full">Web Development</span>
-                            <span class="text-gray-500 text-sm">2024</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">EduLearn Platform</h3>
-                        <p class="text-gray-600 mb-4">
-                            Online learning management system serving over 50,000 students across Africa.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Vue.js</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Django</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">PostgreSQL</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="mobile">
-                    <div class="h-48 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
-                        <i class="fas fa-money-bill-wave text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Mobile App</span>
-                            <span class="text-gray-500 text-sm">2024</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">PayWave Fintech App</h3>
-                        <p class="text-gray-600 mb-4">
-                            Mobile payment solution processing over $10M in transactions monthly.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Flutter</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Node.js</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">MySQL</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition" data-category="web">
-                    <div class="h-48 bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center">
-                        <i class="fas fa-utensils text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-red-600 text-white text-xs px-3 py-1 rounded-full">Web Development</span>
-                            <span class="text-gray-500 text-sm">2024</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">FoodHub Delivery Platform</h3>
-                        <p class="text-gray-600 mb-4">
-                            Restaurant aggregator and delivery platform with real-time tracking.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Angular</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Express</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Redis</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:underline">View Details →</a>
-                    </div>
-                </div>
-
-            </div>
+      <!-- 2: DreamBiz -->
+      <div class="portfolio-card portfolio-item reveal delay-2" data-category="fintech">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#1E40AF,#0E7490);">
+          <i class="fas fa-chart-pie" style="color:rgba(255,255,255,.9)"></i>
         </div>
-    </section>
-
-    <!-- Client Testimonials -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">What Our Clients Say</h2>
-            <p class="text-xl text-gray-600 text-center mb-12">Real feedback from satisfied clients</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                    </div>
-                    <p class="text-gray-700 mb-6 italic">
-                        "Tech Dream Africa delivered beyond our expectations. Their team's expertise in cloud migration saved us significant costs while improving our system performance."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            JK
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">James Kimani</p>
-                            <p class="text-sm text-gray-600">CTO, FinanceHub Ltd</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                    </div>
-                    <p class="text-gray-700 mb-6 italic">
-                        "The mobile app they built for us has transformed how we connect with our customers. The user experience is fantastic and our engagement rates have tripled."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            AN
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Aisha Nkrumah</p>
-                            <p class="text-sm text-gray-600">CEO, RetailPro Ghana</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                        <i class="fas fa-star text-accent"></i>
-                    </div>
-                    <p class="text-gray-700 mb-6 italic">
-                        "Professional, responsive, and incredibly skilled. They took the time to understand our business needs and delivered a solution that perfectly fits our requirements."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            PM
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Peter Mwangi</p>
-                            <p class="text-sm text-gray-600">Director, EduSmart Kenya</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="tag tag-blue">FinTech</span>
+            <span class="tag tag-teal">AI / ML</span>
+          </div>
+          <h3 class="heading-md mb-2">DreamBiz — AI Accounting Platform</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-3">Africa's leading AI-powered accounting &amp; finance management platform — invoicing, expense tracking, inventory control, HR, CRM, and payroll built for Ghanaian businesses.</p>
+          <div class="text-xs text-slate-400 mb-3 space-y-1">
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Impact:</span> 2,500+ active businesses, GH₵50M+ transactions</div>
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Rating:</span> 98% customer satisfaction</div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="tag tag-gray">React</span>
+            <span class="tag tag-gray">Python</span>
+            <span class="tag tag-gray">PostgreSQL</span>
+            <span class="tag tag-gray">AI</span>
+          </div>
+          <a href="https://www.dreambizacc.online/" target="_blank" rel="noopener" class="ms-tile-link">Visit site <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
         </div>
-    </section>
+      </div>
 
-    <!-- Stats Section -->
-    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-5xl font-bold mb-2">150+</div>
-                    <div class="text-blue-100">Projects Completed</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">80+</div>
-                    <div class="text-blue-100">Happy Clients</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">20+</div>
-                    <div class="text-blue-100">Countries Served</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">99%</div>
-                    <div class="text-blue-100">Success Rate</div>
-                </div>
-            </div>
+      <!-- 3: Sua Pa AI -->
+      <div class="portfolio-card portfolio-item reveal delay-3" data-category="ai">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#166534,#0E7490);">
+          <i class="fas fa-graduation-cap" style="color:rgba(255,255,255,.9)"></i>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-6">Ready to Start Your Project?</h2>
-            <p class="text-xl text-gray-600 mb-8">
-                Let's collaborate to bring your vision to life.
-            </p>
-            <a href="contact.html" class="bg-primary text-white px-10 py-4 rounded-full font-semibold hover:bg-blue-700 transition inline-block">
-                Get Started Today
-            </a>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="tag tag-green">EdTech</span>
+            <span class="tag tag-blue">AI / ML</span>
+          </div>
+          <h3 class="heading-md mb-2">Sua Pa AI — Educational Companion</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-3">AI-powered study companion aligned to Ghana's GES curriculum — helping students with Maths, Science, English, Social Studies &amp; ICT, plus BECE and WASSCE preparation.</p>
+          <div class="text-xs text-slate-400 mb-3 space-y-1">
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Location:</span> Winneba &amp; Agona Swedru, Ghana</div>
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Focus:</span> BECE &amp; WASSCE exam preparation</div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="tag tag-gray">Python</span>
+            <span class="tag tag-gray">React</span>
+            <span class="tag tag-gray">NLP</span>
+            <span class="tag tag-gray">Firebase</span>
+          </div>
+          <a href="https://www.suapaai.com/" target="_blank" rel="noopener" class="ms-tile-link">Visit site <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-rocket mr-2"></i>Tech Dream Africa</h3>
-                    <p class="text-gray-400">Empowering Africa through innovative technology solutions.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
-                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="services.html#software" class="text-gray-400 hover:text-white transition">Software Development</a></li>
-                        <li><a href="services.html#mobile" class="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
-                        <li><a href="services.html#cloud" class="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
-                        <li><a href="services.html#consulting" class="text-gray-400 hover:text-white transition">IT Consulting</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <p class="text-gray-400">
-                        <i class="fas fa-envelope mr-2"></i>info@techdreamafrica.org
-                    </p>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2026 Tech Dream Africa. All rights reserved.</p>
-            </div>
+      <!-- 4: Somako -->
+      <div class="portfolio-card portfolio-item reveal delay-4" data-category="web">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#1E40AF,#6D28D9);">
+          <i class="fas fa-globe" style="color:rgba(255,255,255,.9)"></i>
         </div>
-    </footer>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="tag tag-blue">Web App</span>
+            <span class="tag tag-gray">Ghana</span>
+          </div>
+          <h3 class="heading-md mb-2">Somako — Community Platform</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-3">Digital platform built to connect and serve the Somako community — featuring dynamic content management, community engagement tools, and a fully responsive design for Ghanaian users.</p>
+          <div class="text-xs text-slate-400 mb-3 space-y-1">
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Sector:</span> Community / Non-profit</div>
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Focus:</span> Engagement &amp; information access</div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="tag tag-gray">HTML/CSS</span>
+            <span class="tag tag-gray">JavaScript</span>
+            <span class="tag tag-gray">CMS</span>
+          </div>
+          <a href="https://somako.org/" target="_blank" rel="noopener" class="ms-tile-link">Visit site <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
+        </div>
+      </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/portfolio.js"></script>
+      <!-- 5: Oasis IMG Ghana -->
+      <div class="portfolio-card portfolio-item reveal delay-5" data-category="ngo">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#065F46,#0E7490);">
+          <i class="fas fa-hands-helping" style="color:rgba(255,255,255,.9)"></i>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="tag tag-teal">NGO</span>
+            <span class="tag tag-gray">Web App</span>
+          </div>
+          <h3 class="heading-md mb-2">Oasis IMG Ghana — Ministry Platform</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-3">Full-featured website for Oasis IMG Ministries Ghana — incorporating Oasis Bible Institute admissions, ministry pages, leadership profiles, gallery, news system, and event management.</p>
+          <div class="text-xs text-slate-400 mb-3 space-y-1">
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Location:</span> Kasoa, Accra, Ghana</div>
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Features:</span> OBI admissions, ministry departments, news</div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="tag tag-gray">React</span>
+            <span class="tag tag-gray">Node.js</span>
+            <span class="tag tag-gray">Cloudinary</span>
+            <span class="tag tag-gray">Firebase</span>
+          </div>
+          <a href="https://oasisimggh.org/" target="_blank" rel="noopener" class="ms-tile-link">Visit site <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
+        </div>
+      </div>
+
+      <!-- 6: Asore Online -->
+      <div class="portfolio-card portfolio-item reveal delay-6" data-category="web">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#4C1D95,#1E40AF);">
+          <i class="fas fa-church" style="color:rgba(255,255,255,.9)"></i>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="tag tag-blue">Web App</span>
+            <span class="tag tag-gray">Ghana</span>
+          </div>
+          <h3 class="heading-md mb-2">Asore — Digital Church Platform</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-3">Modern digital platform for Asore — built for worship communities in Ghana. Features a clean, mobile-optimised design with event listings, sermon archives, and community resources.</p>
+          <div class="text-xs text-slate-400 mb-3 space-y-1">
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Sector:</span> Faith &amp; Community</div>
+            <div><span class="font-semibold text-slate-500 dark:text-slate-300">Design:</span> Mobile-first, fast-loading</div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="tag tag-gray">HTML/CSS</span>
+            <span class="tag tag-gray">JavaScript</span>
+            <span class="tag tag-gray">Tailwind</span>
+          </div>
+          <a href="https://www.asore.online/" target="_blank" rel="noopener" class="ms-tile-link">Visit site <i class="fas fa-external-link-alt text-xs ml-1"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-20 bg-[#1E40AF]">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center reveal">
+    <span class="ms-label" style="color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.2);">Work with us</span>
+    <h2 class="ms-heading mt-3 mb-4" style="color:#fff;font-size:2.25rem;">Your Project Could Be Our Next Success Story</h2>
+    <p class="ms-subtext mb-8" style="color:rgba(255,255,255,.75);max-width:520px;margin-left:auto;margin-right:auto;">Join our growing list of Ghanaian and African clients who trusted Tech Dream Africa to build their most critical digital products.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="contact.html" class="btn-ms btn-ms-white"><i class="fas fa-calendar-check mr-2"></i>Start Your Project</a>
+      <a href="services.html" class="btn-ms" style="background:transparent;border:2px solid rgba(255,255,255,.5);color:#fff;">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-bg text-slate-400 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html" class="flex items-center gap-2.5 mb-4">
+          <div class="ms-logo-grid" style="width:28px;height:28px;gap:2px;">
+            <div style="background:#4FC3F7;"></div><div style="background:#EF5350;"></div>
+            <div style="background:#66BB6A;"></div><div style="background:#FFA726;"></div>
+          </div>
+          <span class="font-bold text-white">Tech Dream Africa</span>
+        </a>
+        <p class="text-sm leading-relaxed">Building Ghana's next generation of digital solutions — Winneba, Agona Swedru &amp; Accra.</p>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Company</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+          <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Services</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="services.html#software" class="hover:text-white transition">Custom Software</a></li>
+          <li><a href="services.html#mobile" class="hover:text-white transition">Mobile Apps</a></li>
+          <li><a href="services.html#ai" class="hover:text-white transition">AI Solutions</a></li>
+          <li><a href="services.html#cloud" class="hover:text-white transition">Cloud Solutions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Contact</h5>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2"><i class="fas fa-envelope mt-0.5 text-primary"></i><a href="mailto:info@techdreamafrica.org" class="hover:text-white transition">info@techdreamafrica.org</a></li>
+          <li class="flex items-start gap-2"><i class="fas fa-phone mt-0.5 text-primary"></i><a href="tel:+233597458456" class="hover:text-white transition">0597 458 456 &nbsp;·&nbsp; 0540 442 096</a></li>
+          <li class="flex items-start gap-2"><i class="fab fa-whatsapp mt-0.5 text-green-400"></i><a href="https://wa.me/233597458456" class="hover:text-white transition">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
+      <p>© 2026 Tech Dream Africa. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

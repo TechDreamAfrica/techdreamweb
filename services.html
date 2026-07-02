@@ -1,450 +1,390 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Tech Dream Africa</title>
-    <meta name="description" content="Explore Tech Dream Africa's comprehensive technology services including software development, mobile apps, cloud solutions, and IT consulting.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1e40af',
-                        secondary: '#0ea5e9',
-                        accent: '#f59e0b',
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Tech Dream Africa | Custom Software, AI, Cloud & More</title>
+  <meta name="description" content="Explore Tech Dream Africa's full range of technology services: custom software, mobile apps, AI/ML, cloud solutions, DevOps, ERP, cybersecurity, and IT consulting.">
+  <link rel="canonical" href="https://techdreamafrica.org/services.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#1E40AF',accent:'#DC2626',success:'#10B981'}}}}</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-sans antialiased">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-2xl font-bold text-primary">
-                        <i class="fas fa-rocket mr-2"></i>Tech Dream Africa
-                    </a>
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-800 hover:text-primary font-semibold transition">Home</a>
-                    <a href="about.html" class="text-gray-800 hover:text-primary font-semibold transition">About</a>
-                    <a href="services.html" class="text-gray-800 hover:text-primary font-semibold transition">Services</a>
-                    <a href="portfolio.html" class="text-gray-800 hover:text-primary font-semibold transition">Portfolio</a>
-                    <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Contact Us</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-            
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-                <a href="index.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Home</a>
-                <a href="about.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">About</a>
-                <a href="services.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Services</a>
-                <a href="portfolio.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Portfolio</a>
-                <a href="contact.html" class="block py-2 text-gray-800 hover:text-primary font-semibold">Contact Us</a>
-            </div>
+<body class="font-sans antialiased bg-[#F8FAFC] dark:bg-[#0F172A] text-slate-900 dark:text-slate-100">
+
+<a id="whatsapp-float" href="https://wa.me/233597458456" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu-overlay" class="mobile-menu-overlay">
+  <div id="mobile-menu-backdrop" class="mobile-menu-backdrop"></div>
+  <nav class="mobile-menu-panel">
+    <div class="flex items-center justify-between mb-6">
+      <span class="text-lg font-bold text-primary">Tech Dream Africa</span>
+      <button id="mobile-menu-close" class="text-slate-500 p-1"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="services.html" class="mobile-nav-link" aria-current="page">Services</a>
+    <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <div class="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+      <a href="contact.html" class="btn-ms btn-ms-blue w-full justify-center">Get Started</a>
+    </div>
+  </nav>
+</div>
+
+<!-- Navigation -->
+<header id="main-nav" class="nav-glass ms-nav-flat fixed top-0 left-0 right-0 z-[100]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <div class="ms-logo-grid" style="width:28px;height:28px;gap:2px;">
+          <div style="background:#4FC3F7;"></div><div style="background:#EF5350;"></div>
+          <div style="background:#66BB6A;"></div><div style="background:#FFA726;"></div>
         </div>
+        <span class="font-bold text-[15px] text-slate-900 dark:text-white">Tech Dream <span class="text-primary">Africa</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link" aria-current="page">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="btn-ms btn-ms-blue hidden md:inline-flex">Get Started</a>
+        <button id="mobile-menu-open" class="md:hidden w-9 h-9 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page Header -->
+<section class="hero-section pt-16 py-24">
+  <div class="hero-glow-1"></div><div class="hero-grid"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <nav class="flex justify-center mb-6" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2 text-sm text-slate-500">
+        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+        <li><i class="fas fa-chevron-right text-xs"></i></li>
+        <li class="text-slate-300">Services</li>
+      </ol>
     </nav>
+    <div class="section-badge mb-4 reveal" style="background:rgba(37,99,235,.15);color:#93C5FD"><i class="fas fa-layer-group"></i> What We Do</div>
+    <h1 class="display-lg text-white mb-5 reveal delay-1">Comprehensive Technology<br>Services for Every Need</h1>
+    <p class="body-lg text-slate-400 max-w-2xl mx-auto reveal delay-2">From strategy to deployment, we deliver end-to-end technology solutions that help African businesses compete on the global stage.</p>
+  </div>
+</section>
 
-    <!-- Page Header -->
-    <section class="pt-32 pb-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl font-bold mb-4">Our Services</h1>
-            <p class="text-xl text-blue-100">Comprehensive technology solutions tailored for your success</p>
+<!-- Service Detail: Custom Software -->
+<section id="software" class="py-20 bg-white dark:bg-slate-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-start">
+      <div class="reveal-left">
+        <div class="icon-badge ib-blue mb-5" style="width:4rem;height:4rem;font-size:1.75rem"><i class="fas fa-code"></i></div>
+        <h2 class="heading-xl mb-4">Custom Software Development</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Transform your business with bespoke software solutions engineered for scale, security, and performance. We build everything from internal tools to enterprise platforms serving millions of users.</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Web Application Development (React, Vue, Next.js, Angular)</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Backend Systems (Node.js, Python/Django, Java Spring, .NET)</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Database Design, Optimisation & Data Architecture</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Legacy System Modernisation & Migration</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">SaaS Product Development & Multi-tenant Architecture</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Progressive Web Apps (PWA) & Single Page Applications</span></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Request a Quote <i class="fas fa-arrow-right ml-1 text-sm"></i></a>
+      </div>
+      <div class="reveal-right">
+        <div class="card p-6">
+          <h3 class="font-bold mb-4 text-slate-900 dark:text-white">Technologies We Use</h3>
+          <div class="grid grid-cols-3 gap-3">
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-react" style="color:#61DAFB"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">React</div></div>
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-node-js" style="color:#339933"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Node.js</div></div>
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-python" style="color:#3776AB"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Python</div></div>
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-vuejs" style="color:#42b883"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Vue.js</div></div>
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-java" style="color:#ED8B00"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Java</div></div>
+            <div class="tech-icon-card"><div class="tech-icon">▲</div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Next.js</div></div>
+          </div>
         </div>
-    </section>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <div class="card p-4 text-center">
+            <div class="text-2xl font-extrabold text-primary">50+</div>
+            <div class="text-xs text-slate-500 mt-1">Web Apps Delivered</div>
+          </div>
+          <div class="card p-4 text-center">
+            <div class="text-2xl font-extrabold text-accent">99.9%</div>
+            <div class="text-xs text-slate-500 mt-1">Avg. Uptime SLA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Software Development -->
-    <section id="software" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <div class="text-6xl text-primary mb-6">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Software Development</h2>
-                    <p class="text-lg text-gray-700 mb-6">
-                        Transform your business with custom software solutions built using the latest technologies 
-                        and best practices. We deliver scalable, secure, and maintainable applications tailored 
-                        to your unique business requirements.
-                    </p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Web Application Development (React, Vue, Angular)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Backend Systems (Node.js, Python, Java)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">API Development & Integration</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Database Design & Optimization</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Enterprise Software Solutions</span>
-                        </li>
-                    </ul>
-                    <a href="contact.html" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition inline-block">
-                        Request a Quote
-                    </a>
-                </div>
-                <div class="md:w-1/2">
-                    <div class="bg-gradient-to-br from-primary to-blue-700 p-8 rounded-lg text-white">
-                        <h3 class="text-2xl font-bold mb-4">Technologies We Use</h3>
-                        <div class="grid grid-cols-3 gap-4">
-                            <div class="bg-white/10 p-4 rounded text-center">
-                                <i class="fab fa-react text-4xl mb-2"></i>
-                                <p class="text-sm">React</p>
-                            </div>
-                            <div class="bg-white/10 p-4 rounded text-center">
-                                <i class="fab fa-node-js text-4xl mb-2"></i>
-                                <p class="text-sm">Node.js</p>
-                            </div>
-                            <div class="bg-white/10 p-4 rounded text-center">
-                                <i class="fab fa-python text-4xl mb-2"></i>
-                                <p class="text-sm">Python</p>
-                            </div>
-                            <div class="bg-white/10 p-4 rounded text-center">
-                                <i class="fab fa-angular text-4xl mb-2"></i>
-                                <p class="text-sm">Angular</p>
-                            </div>
-                            <div class="bg-white/10 p-4 rounded text-center">
-                                <i class="fab fa-vuejs text-4xl mb-2"></i>
-                                <p class="text-sm">Vue.js</p>
-                            </div>
-                            <div class="bg-white/10 p-4 rounded text-center">
-                                <i class="fab fa-java text-4xl mb-2"></i>
-                                <p class="text-sm">Java</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Mobile Apps -->
+<section id="mobile" class="py-20 bg-[#F8FAFC] dark:bg-[#0F172A]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-start">
+      <div class="order-2 lg:order-1 reveal-left">
+        <div class="card p-6">
+          <h3 class="font-bold mb-4">Mobile Platforms & Frameworks</h3>
+          <div class="grid grid-cols-3 gap-3">
+            <div class="tech-icon-card"><div class="tech-icon">🐦</div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Flutter</div></div>
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-react" style="color:#61DAFB"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">React Native</div></div>
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-swift" style="color:#FA7343"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Swift/iOS</div></div>
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-android" style="color:#3DDC84"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Kotlin/Android</div></div>
+            <div class="tech-icon-card"><div class="tech-icon">🔥</div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">Firebase</div></div>
+            <div class="tech-icon-card"><div class="tech-icon"><i class="fab fa-aws" style="color:#FF9900"></i></div><div class="text-xs font-medium text-slate-600 dark:text-slate-300">AWS Amplify</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 reveal-right">
+        <div class="icon-badge ib-purple mb-5" style="width:4rem;height:4rem;font-size:1.75rem"><i class="fas fa-mobile-alt"></i></div>
+        <h2 class="heading-xl mb-4">Mobile App Development</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Reach your customers on iOS and Android with polished, performant mobile apps built by specialists who understand the unique needs of African mobile users.</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Native iOS (Swift) & Android (Kotlin) Development</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Cross-Platform Apps with Flutter & React Native</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">USSD, SMS & Low-Bandwidth Optimisation for African Networks</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Mobile Payment Integration (M-Pesa, Flutterwave, Paystack)</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">App Store & Google Play Publishing & Optimisation</span></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Start Your App Project <i class="fas fa-arrow-right ml-1 text-sm"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI & ML -->
+<section id="ai" class="py-20 bg-white dark:bg-slate-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-start">
+      <div class="reveal-left">
+        <div class="icon-badge ib-indigo mb-5" style="width:4rem;height:4rem;font-size:1.75rem"><i class="fas fa-brain"></i></div>
+        <h2 class="heading-xl mb-4">AI & Machine Learning Solutions</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Harness the power of artificial intelligence to automate processes, generate insights, and deliver personalised experiences at scale — adapted specifically for African contexts and languages.</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Custom LLM Integration (GPT-4, Claude, Llama, Mistral)</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Retrieval-Augmented Generation (RAG) Systems</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">African Language NLP (Swahili, Yoruba, Amharic, Hausa)</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Computer Vision & Image Recognition</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Predictive Analytics & Demand Forecasting</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">AI Chatbots & Intelligent Automation Workflows</span></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Explore AI Solutions <i class="fas fa-arrow-right ml-1 text-sm"></i></a>
+      </div>
+      <div class="reveal-right">
+        <div class="card p-6 bg-[#0F172A] dark:bg-slate-800 border-slate-700">
+          <h3 class="font-bold mb-4 text-white">AI Capabilities</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span class="text-slate-300">Natural Language Processing</span><span class="text-primary font-semibold">Expert</span></div>
+              <div class="h-2 bg-slate-700 rounded-full"><div class="h-2 bg-primary rounded-full" style="width:92%"></div></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Mobile App Development -->
-    <section id="mobile" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
-                <div class="md:w-1/2">
-                    <div class="text-6xl text-secondary mb-6">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Mobile App Development</h2>
-                    <p class="text-lg text-gray-700 mb-6">
-                        Reach your customers on the go with powerful mobile applications. We develop native and 
-                        cross-platform apps that deliver exceptional user experiences across iOS and Android devices.
-                    </p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-secondary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Native iOS Development (Swift)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-secondary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Native Android Development (Kotlin)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-secondary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Cross-Platform Apps (React Native, Flutter)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-secondary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Progressive Web Apps (PWA)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-secondary text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">App Store Optimization & Publishing</span>
-                        </li>
-                    </ul>
-                    <a href="contact.html" class="bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:bg-cyan-600 transition inline-block">
-                        Start Your App Project
-                    </a>
-                </div>
-                <div class="md:w-1/2">
-                    <div class="bg-gradient-to-br from-secondary to-cyan-700 p-8 rounded-lg text-white">
-                        <h3 class="text-2xl font-bold mb-6">App Features We Build</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <i class="fas fa-user-circle text-2xl mr-4"></i>
-                                <span>User Authentication & Profiles</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-credit-card text-2xl mr-4"></i>
-                                <span>Payment Integration</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-bell text-2xl mr-4"></i>
-                                <span>Push Notifications</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-map-marker-alt text-2xl mr-4"></i>
-                                <span>Location Services</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-comments text-2xl mr-4"></i>
-                                <span>Real-time Chat & Messaging</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-chart-line text-2xl mr-4"></i>
-                                <span>Analytics & Reporting</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span class="text-slate-300">Computer Vision</span><span class="text-primary font-semibold">Advanced</span></div>
+              <div class="h-2 bg-slate-700 rounded-full"><div class="h-2 bg-primary rounded-full" style="width:85%"></div></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Cloud Solutions -->
-    <section id="cloud" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <div class="text-6xl text-accent mb-6">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Cloud Solutions</h2>
-                    <p class="text-lg text-gray-700 mb-6">
-                        Leverage the power of cloud computing to scale your business efficiently. We provide 
-                        comprehensive cloud services from migration to management, ensuring optimal performance 
-                        and cost-effectiveness.
-                    </p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Cloud Migration & Strategy</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">AWS, Azure, Google Cloud Services</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">DevOps & CI/CD Implementation</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Infrastructure as Code (Terraform, CloudFormation)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Cloud Security & Compliance</span>
-                        </li>
-                    </ul>
-                    <a href="contact.html" class="bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 transition inline-block">
-                        Explore Cloud Options
-                    </a>
-                </div>
-                <div class="md:w-1/2">
-                    <div class="grid grid-cols-1 gap-4">
-                        <div class="bg-gradient-to-r from-orange-500 to-orange-700 p-6 rounded-lg text-white">
-                            <i class="fab fa-aws text-4xl mb-3"></i>
-                            <h4 class="text-xl font-bold mb-2">Amazon Web Services</h4>
-                            <p class="text-sm text-orange-100">Comprehensive cloud infrastructure and services</p>
-                        </div>
-                        <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-6 rounded-lg text-white">
-                            <i class="fab fa-microsoft text-4xl mb-3"></i>
-                            <h4 class="text-xl font-bold mb-2">Microsoft Azure</h4>
-                            <p class="text-sm text-blue-100">Enterprise-grade cloud platform</p>
-                        </div>
-                        <div class="bg-gradient-to-r from-red-500 to-yellow-500 p-6 rounded-lg text-white">
-                            <i class="fab fa-google text-4xl mb-3"></i>
-                            <h4 class="text-xl font-bold mb-2">Google Cloud Platform</h4>
-                            <p class="text-sm text-yellow-100">Scalable and flexible cloud solutions</p>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span class="text-slate-300">LLM Integration</span><span class="text-primary font-semibold">Expert</span></div>
+              <div class="h-2 bg-slate-700 rounded-full"><div class="h-2 bg-primary rounded-full" style="width:95%"></div></div>
             </div>
-        </div>
-    </section>
-
-    <!-- IT Consulting -->
-    <section id="consulting" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
-                <div class="md:w-1/2">
-                    <div class="text-6xl text-green-600 mb-6">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <h2 class="text-4xl font-bold text-gray-800 mb-6">IT Consulting & Strategy</h2>
-                    <p class="text-lg text-gray-700 mb-6">
-                        Navigate the complex technology landscape with expert guidance. Our consultants help you 
-                        make informed decisions about technology investments, digital transformation, and IT strategy.
-                    </p>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Digital Transformation Strategy</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Technology Roadmap Planning</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">System Architecture Review</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">IT Infrastructure Assessment</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Vendor Selection & Management</span>
-                        </li>
-                    </ul>
-                    <a href="contact.html" class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition inline-block">
-                        Book a Consultation
-                    </a>
-                </div>
-                <div class="md:w-1/2">
-                    <div class="bg-gradient-to-br from-green-600 to-green-800 p-8 rounded-lg text-white">
-                        <h3 class="text-2xl font-bold mb-6">Our Consulting Approach</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="bg-white text-green-600 rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
-                                <div>
-                                    <h4 class="font-semibold mb-1">Discovery & Assessment</h4>
-                                    <p class="text-sm text-green-100">Understanding your current state and goals</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-white text-green-600 rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
-                                <div>
-                                    <h4 class="font-semibold mb-1">Strategy Development</h4>
-                                    <p class="text-sm text-green-100">Creating a tailored technology roadmap</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-white text-green-600 rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
-                                <div>
-                                    <h4 class="font-semibold mb-1">Implementation Support</h4>
-                                    <p class="text-sm text-green-100">Guiding execution and change management</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-white text-green-600 rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
-                                <div>
-                                    <h4 class="font-semibold mb-1">Continuous Improvement</h4>
-                                    <p class="text-sm text-green-100">Monitoring results and optimization</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span class="text-slate-300">Predictive Analytics</span><span class="text-primary font-semibold">Advanced</span></div>
+              <div class="h-2 bg-slate-700 rounded-full"><div class="h-2 bg-primary rounded-full" style="width:88%"></div></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Additional Services -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">Additional Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-                    <div class="text-4xl text-purple-600 mb-4">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">Cybersecurity</h3>
-                    <p class="text-gray-600">Protect your digital assets with comprehensive security solutions and audits.</p>
-                </div>
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-                    <div class="text-4xl text-pink-600 mb-4">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">Data Analytics</h3>
-                    <p class="text-gray-600">Turn data into insights with advanced analytics and business intelligence.</p>
-                </div>
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-                    <div class="text-4xl text-indigo-600 mb-4">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">AI & Machine Learning</h3>
-                    <p class="text-gray-600">Leverage artificial intelligence to automate processes and gain competitive advantage.</p>
-                </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span class="text-slate-300">MLOps & Model Deployment</span><span class="text-accent font-semibold">Advanced</span></div>
+              <div class="h-2 bg-slate-700 rounded-full"><div class="h-2 bg-accent rounded-full" style="width:82%"></div></div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-6">Ready to Get Started?</h2>
-            <p class="text-xl mb-8 text-blue-100">
-                Let's discuss how our services can help your business grow.
-            </p>
-            <a href="contact.html" class="bg-accent text-white px-10 py-4 rounded-full font-semibold hover:bg-yellow-600 transition inline-block">
-                Contact Us Today
-            </a>
+<!-- Cloud -->
+<section id="cloud" class="py-20 bg-[#F8FAFC] dark:bg-[#0F172A]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-start">
+      <div class="reveal-left order-2 lg:order-1">
+        <div class="grid gap-4">
+          <div class="card p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center"><i class="fab fa-aws text-2xl text-orange-500"></i></div>
+            <div><h4 class="font-bold">Amazon Web Services</h4><p class="text-xs text-slate-500 dark:text-slate-400">EC2, Lambda, RDS, S3, CloudFront, EKS</p></div>
+          </div>
+          <div class="card p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center"><i class="fab fa-microsoft text-2xl text-blue-500"></i></div>
+            <div><h4 class="font-bold">Microsoft Azure</h4><p class="text-xs text-slate-500 dark:text-slate-400">App Service, AKS, Cosmos DB, Azure AI</p></div>
+          </div>
+          <div class="card p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-red-50 dark:bg-red-900/20 flex items-center justify-center"><i class="fab fa-google text-2xl text-red-500"></i></div>
+            <div><h4 class="font-bold">Google Cloud Platform</h4><p class="text-xs text-slate-500 dark:text-slate-400">GKE, BigQuery, Vertex AI, Cloud Run</p></div>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="order-1 lg:order-2 reveal-right">
+        <div class="icon-badge ib-blue mb-5" style="width:4rem;height:4rem;font-size:1.75rem"><i class="fas fa-cloud"></i></div>
+        <h2 class="heading-xl mb-4">Cloud Solutions</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Migrate, modernise, and optimise your cloud infrastructure with certified AWS, Azure, and GCP specialists. We design resilient, cost-efficient cloud architectures for African businesses.</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Cloud Migration Strategy & Execution</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Cloud-Native Architecture & Microservices</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Infrastructure as Code (Terraform, CloudFormation, Bicep)</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">FinOps — Cloud Cost Optimisation & Management</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check-circle text-primary mt-0.5"></i><span class="text-slate-600 dark:text-slate-400">Disaster Recovery & Business Continuity Planning</span></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Explore Cloud Options <i class="fas fa-arrow-right ml-1 text-sm"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-rocket mr-2"></i>Tech Dream Africa</h3>
-                    <p class="text-gray-400">Empowering Africa through innovative technology solutions.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
-                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="services.html#software" class="text-gray-400 hover:text-white transition">Software Development</a></li>
-                        <li><a href="services.html#mobile" class="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
-                        <li><a href="services.html#cloud" class="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
-                        <li><a href="services.html#consulting" class="text-gray-400 hover:text-white transition">IT Consulting</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-2xl text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <p class="text-gray-400">
-                        <i class="fas fa-envelope mr-2"></i>info@techdreamafrica.org
-                    </p>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2026 Tech Dream Africa. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+<!-- More Services Grid -->
+<section class="py-20 bg-white dark:bg-slate-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="section-title mb-4 reveal">More Specialised Services</h2>
+      <p class="section-subtitle mx-auto reveal delay-1">A full spectrum of technology expertise to address every challenge.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <script src="js/main.js"></script>
+      <div id="web" class="card p-6 reveal delay-1">
+        <div class="icon-badge ib-teal mb-4"><i class="fas fa-globe"></i></div>
+        <h3 class="heading-md mb-2">Web Development</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">Blazing-fast, SEO-optimised websites and web apps. From marketing sites to complex portals, we deliver pixel-perfect, accessible web experiences.</p>
+        <a href="contact.html" class="text-primary text-sm font-semibold hover:underline">Get Started <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+      </div>
+
+      <div id="design" class="card p-6 reveal delay-2">
+        <div class="icon-badge ib-pink mb-4"><i class="fas fa-paint-brush"></i></div>
+        <h3 class="heading-md mb-2">UI/UX Design</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">User research, wireframing, prototyping, and high-fidelity design with a focus on African users. We validate designs before development begins.</p>
+        <a href="contact.html" class="text-primary text-sm font-semibold hover:underline">Get Started <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+      </div>
+
+      <div id="devops" class="card p-6 reveal delay-3">
+        <div class="icon-badge ib-orange mb-4"><i class="fas fa-infinity"></i></div>
+        <h3 class="heading-md mb-2">DevOps & CI/CD</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">Accelerate delivery with automated pipelines, containerisation (Docker/K8s), monitoring, and site reliability engineering (SRE) practices.</p>
+        <a href="contact.html" class="text-primary text-sm font-semibold hover:underline">Get Started <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+      </div>
+
+      <div id="erp" class="card p-6 reveal delay-4">
+        <div class="icon-badge ib-green mb-4"><i class="fas fa-sitemap"></i></div>
+        <h3 class="heading-md mb-2">ERP Systems</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">Custom ERP implementations, Odoo customisation, SAP integrations, and purpose-built business management systems for African enterprises.</p>
+        <a href="contact.html" class="text-primary text-sm font-semibold hover:underline">Get Started <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+      </div>
+
+      <div id="api" class="card p-6 reveal delay-5">
+        <div class="icon-badge ib-teal mb-4"><i class="fas fa-plug"></i></div>
+        <h3 class="heading-md mb-2">API Development</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">RESTful APIs, GraphQL, gRPC, and event-driven architectures. We build secure, well-documented APIs that power integrations and partner ecosystems.</p>
+        <a href="contact.html" class="text-primary text-sm font-semibold hover:underline">Get Started <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+      </div>
+
+      <div id="consulting" class="card p-6 reveal delay-6">
+        <div class="icon-badge ib-yellow mb-4"><i class="fas fa-lightbulb"></i></div>
+        <h3 class="heading-md mb-2">IT Consulting</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">Digital transformation roadmaps, technology due diligence, architecture reviews, and strategic IT advisory for C-suite executives.</p>
+        <a href="contact.html" class="text-primary text-sm font-semibold hover:underline">Get Started <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+      </div>
+
+      <div id="security" class="card p-6 reveal delay-1">
+        <div class="icon-badge ib-pink mb-4"><i class="fas fa-shield-alt"></i></div>
+        <h3 class="heading-md mb-2">Cybersecurity</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">Security audits, penetration testing, OWASP compliance, GDPR/NDPR readiness, and enterprise security architecture for African organisations.</p>
+        <a href="contact.html" class="text-primary text-sm font-semibold hover:underline">Get Started <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+      </div>
+
+      <div id="transformation" class="card p-6 reveal delay-2">
+        <div class="icon-badge ib-indigo mb-4"><i class="fas fa-rocket"></i></div>
+        <h3 class="heading-md mb-2">Digital Transformation</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">End-to-end digital transformation programmes: strategy, culture change, process automation, technology implementation, and change management.</p>
+        <a href="contact.html" class="text-primary text-sm font-semibold hover:underline">Get Started <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+      </div>
+
+      <div class="card p-6 reveal delay-3 flex flex-col items-center justify-center text-center" style="min-height:180px">
+        <div class="text-3xl mb-3">💡</div>
+        <h3 class="heading-md mb-2">Have a Unique Need?</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Don't see exactly what you're looking for? Let us discuss your specific challenge.</p>
+        <a href="contact.html" class="btn-ms btn-ms-blue">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-primary">
+  <div class="max-w-4xl mx-auto px-4 text-center reveal">
+    <h2 class="section-title mb-5" style="color:#fff">Not Sure Which Service<br>You Need?</h2>
+    <p class="body-lg mb-8" style="color:rgba(255,255,255,.8)">Book a free consultation and our experts will assess your needs and recommend the right approach — no obligation, no pressure.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="contact.html" class="btn btn-lg" style="background:#fff;color:#2563EB"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
+      <a href="portfolio.html" class="btn btn-outline btn-lg" style="color:#fff;border-color:rgba(255,255,255,.5)">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-bg text-slate-400 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html" class="flex items-center gap-2.5 mb-4">
+          <div class="ms-logo-grid" style="width:28px;height:28px;gap:2px;">
+            <div style="background:#4FC3F7;"></div><div style="background:#EF5350;"></div>
+            <div style="background:#66BB6A;"></div><div style="background:#FFA726;"></div>
+          </div>
+          <span class="font-bold text-white">Tech Dream Africa</span>
+        </a>
+        <p class="text-sm leading-relaxed">Building Ghana's next generation of digital solutions — Winneba, Agona Swedru &amp; Accra.</p>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Company</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+          <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Top Services</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#software" class="hover:text-white transition">Custom Software</a></li>
+          <li><a href="#mobile" class="hover:text-white transition">Mobile Apps</a></li>
+          <li><a href="#ai" class="hover:text-white transition">AI Solutions</a></li>
+          <li><a href="#cloud" class="hover:text-white transition">Cloud Solutions</a></li>
+          <li><a href="#security" class="hover:text-white transition">Cybersecurity</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Contact</h5>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2"><i class="fas fa-envelope mt-0.5 text-primary"></i><a href="mailto:info@techdreamafrica.org" class="hover:text-white transition">info@techdreamafrica.org</a></li>
+          <li class="flex items-start gap-2"><i class="fas fa-phone mt-0.5 text-primary"></i><a href="tel:+233597458456" class="hover:text-white transition">0597 458 456 &nbsp;·&nbsp; 0540 442 096</a></li>
+          <li class="flex items-start gap-2"><i class="fab fa-whatsapp mt-0.5 text-green-400"></i><a href="https://wa.me/233597458456" class="hover:text-white transition">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
+      <p>© 2026 Tech Dream Africa. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
