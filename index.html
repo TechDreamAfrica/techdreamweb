@@ -217,14 +217,14 @@
 <!-- ============================================================
      HERO SECTION
 ============================================================ -->
-<section class="hero-section pt-16" style="min-height:100vh;display:flex;align-items:center;">
+<section class="hero-section pt-16 relative overflow-hidden" style="min-height:70vh;display:flex;align-items:center;">
+  <!-- Background Image -->
+  <img src="./images/16958936097596989.jpg" alt="" class="absolute inset-0 w-full h-full object-cover z-0">
+  <!-- Optional overlay to keep text readable over the image -->
+  <div class="absolute inset-0 bg-black/60 z-0"></div>
+
   <div class="hero-glow-1"></div><div class="hero-glow-2"></div><div class="hero-grid"></div>
   <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24">
-
-    <!-- Brand Logo -->
-    <div class="mb-8 reveal">
-      <img src="LOGO.png" alt="Tech Dream Africa" class="hero-logo-img h-14 sm:h-20 lg:h-28 mx-auto drop-shadow-2xl" style="filter:brightness(0) invert(1);">
-    </div>
 
     <div class="section-badge mb-6 reveal" style="background:rgba(37,99,235,.15);color:#93C5FD"><i class="fas fa-map-marker-alt mr-1"></i> Ghana's Premier Software &amp; Digital Company</div>
     <h1 class="text-white reveal delay-1" style="font-size:clamp(2.4rem,5.5vw,4.25rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;margin-bottom:1.5rem;">
@@ -233,27 +233,7 @@
     <p class="reveal delay-2" style="color:#94A3B8;font-size:1.125rem;line-height:1.7;max-width:680px;margin:0 auto 3rem;">
       Based in Winneba, Agona Swedru &amp; Accra — we partner with startups, enterprises, NGOs, and government agencies across Ghana and West Africa to deliver world-class software, mobile apps, and AI solutions.
     </p>
-    <div class="flex flex-wrap justify-center items-center gap-8 mb-10 reveal delay-3">
-      <div class="text-center">
-        <div class="text-3xl font-extrabold text-white" data-counter data-target="100" data-suffix="+">100+</div>
-        <div class="text-xs text-slate-500 mt-1">Projects Delivered</div>
-      </div>
-      <div class="w-px h-8 bg-slate-700"></div>
-      <div class="text-center">
-        <div class="text-3xl font-extrabold text-white" data-counter data-target="15" data-suffix="+">15+</div>
-        <div class="text-xs text-slate-500 mt-1">Countries Served</div>
-      </div>
-      <div class="w-px h-8 bg-slate-700"></div>
-      <div class="text-center">
-        <div class="text-3xl font-extrabold text-white" data-counter data-target="5" data-suffix="+">5+</div>
-        <div class="text-xs text-slate-500 mt-1">Years Experience</div>
-      </div>
-      <div class="w-px h-8 bg-slate-700"></div>
-      <div class="text-center">
-        <div class="text-3xl font-extrabold text-white" data-counter data-target="98" data-suffix="%">98%</div>
-        <div class="text-xs text-slate-500 mt-1">Client Satisfaction</div>
-      </div>
-    </div>
+
     <div class="flex flex-wrap justify-center gap-4 reveal delay-4 hero-cta-stack">
       <a href="contact.html" class="btn-ms btn-ms-red"><i class="fas fa-calendar-check mr-2"></i>Book a Free Consultation</a>
       <a href="portfolio.html" class="btn-ms" style="background:transparent;border:2px solid rgba(255,255,255,.25);color:#fff;"><i class="fas fa-briefcase mr-2"></i>View Our Portfolio</a>
@@ -262,9 +242,7 @@
   </div>
 </section>
 
-<!-- ============================================================
-     TRUSTED BY (Microsoft-style static logo strip)
-============================================================ -->
+
 <section class="py-10 bg-white dark:bg-[#1E293B] border-b border-slate-100 dark:border-slate-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 text-center mb-6">Trusted by organisations across Ghana &amp; West Africa</p>
@@ -282,9 +260,7 @@
     </div>
   </div>
 </section>
-<!-- ============================================================
-     SERVICES — Microsoft-Style Product Tile Grid
-============================================================ -->
+
 <section id="services" class="py-16 bg-white dark:bg-[#0F172A]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -297,8 +273,8 @@
     <!-- 2 Featured Large Tiles -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
       <div class="ms-tile reveal delay-1">
-        <div class="ms-tile-visual ms-tile-visual-lg" style="background:#1E40AF;">
-          <i class="fas fa-code" style="font-size:5rem;color:rgba(255,255,255,.85)"></i>
+        <div class="ms-tile-visual ms-tile-visual-lg relative overflow-hidden">
+          <img src="./images/The Success Dynasty Hub_ Your Gateway to Multiple Income Streams.jpg" alt="" class="absolute inset-0 w-full h-full">
         </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">Custom Software Development</h3>
@@ -307,8 +283,8 @@
         </div>
       </div>
       <div class="ms-tile reveal delay-2">
-        <div class="ms-tile-visual ms-tile-visual-lg" style="background:#581C87;">
-          <i class="fas fa-brain" style="font-size:5rem;color:rgba(255,255,255,.85)"></i>
+        <div class="ms-tile-visual ms-tile-visual-lg relative overflow-hidden">
+          <img src="./images/Future artificial intelligence robot and….jpg" alt="" class="absolute inset-0 w-full h-full">
         </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">AI &amp; Machine Learning</h3>
@@ -321,7 +297,9 @@
     <!-- 4-Tile Row -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-5">
       <div class="ms-tile reveal delay-1">
-        <div class="ms-tile-visual" style="background:#0F766E;"><i class="fas fa-mobile-alt" style="font-size:3.5rem;color:rgba(255,255,255,.85)"></i></div>
+        <div class="ms-tile-visual relative overflow-hidden">
+          <img src="./images/What Are The Benefits Of An iOS App Development Agency_.jpg" alt="" class="absolute inset-0 w-full h-full ">
+        </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">Mobile App Development</h3>
           <p class="ms-tile-desc">iOS and Android apps — native and cross-platform — that delight users and drive measurable growth.</p>
@@ -329,7 +307,9 @@
         </div>
       </div>
       <div class="ms-tile reveal delay-2">
-        <div class="ms-tile-visual" style="background:#0369A1;"><i class="fas fa-cloud" style="font-size:3.5rem;color:rgba(255,255,255,.85)"></i></div>
+        <div class="ms-tile-visual relative overflow-hidden" style="background:#0369A1;">
+          <img src="./images/Cloud and DevOps Services in UAE.jpg" alt="" class="absolute inset-0 w-full h-full">
+        </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">Cloud Solutions</h3>
           <p class="ms-tile-desc">AWS, Azure, and GCP migrations, cloud architecture design, and fully managed infrastructure.</p>
@@ -337,7 +317,9 @@
         </div>
       </div>
       <div class="ms-tile reveal delay-3">
-        <div class="ms-tile-visual" style="background:#1D4ED8;"><i class="fas fa-globe" style="font-size:3.5rem;color:rgba(255,255,255,.85)"></i></div>
+        <div class="ms-tile-visual relative overflow-hidden" style="background:#1D4ED8;">
+          <img src="./images/The 10 Biggest Technology Trends That Will Transform The Next Decade _ Bernard Marr.jpg" alt="" class="absolute inset-0 w-full h-full">
+        </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">Web Development</h3>
           <p class="ms-tile-desc">High-performance websites and web apps optimised for speed, SEO, and conversion.</p>
@@ -345,7 +327,9 @@
         </div>
       </div>
       <div class="ms-tile reveal delay-4">
-        <div class="ms-tile-visual" style="background:#C2410C;"><i class="fas fa-infinity" style="font-size:3.5rem;color:rgba(255,255,255,.85)"></i></div>
+        <div class="ms-tile-visual relative overflow-hidden" style="background:#C2410C;">
+          <img src="./images/DevOps and CI_CD_ Complete Guide To Better Software Delivery.jpg" alt="" class="absolute inset-0 w-full h-full">
+        </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">DevOps &amp; CI/CD</h3>
           <p class="ms-tile-desc">Automated pipelines, Docker, Kubernetes, and infrastructure-as-code for faster, reliable delivery.</p>
@@ -357,7 +341,9 @@
     <!-- 4-Tile Row 2 -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
       <div class="ms-tile reveal delay-1">
-        <div class="ms-tile-visual" style="background:#166534;"><i class="fas fa-sitemap" style="font-size:3.5rem;color:rgba(255,255,255,.85)"></i></div>
+        <div class="ms-tile-visual relative overflow-hidden">
+          <img src="./images/What Is ERP_ A Practical Introduction to Enterprise Resource Planning Systems - ERPPILOT_com.jpg" alt="" class="absolute inset-0 w-full h-full">
+        </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">ERP Systems</h3>
           <p class="ms-tile-desc">Custom ERP implementations and integrations to streamline business operations end-to-end.</p>
@@ -365,7 +351,9 @@
         </div>
       </div>
       <div class="ms-tile reveal delay-2">
-        <div class="ms-tile-visual" style="background:#DB2777;"><i class="fas fa-paint-brush" style="font-size:3.5rem;color:rgba(255,255,255,.85)"></i></div>
+        <div class="ms-tile-visual relative overflow-hidden">
+          <img src="./images/Present Confidently_ Body Language Tips + Slide Design Secrets! 🗣️💼.jpg" alt="" class="absolute inset-0 w-full h-full">
+        </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">UI/UX Design</h3>
           <p class="ms-tile-desc">User-centred design that converts visitors into customers with intuitive, beautiful experiences.</p>
@@ -373,7 +361,9 @@
         </div>
       </div>
       <div class="ms-tile reveal delay-3">
-        <div class="ms-tile-visual" style="background:#991B1B;"><i class="fas fa-shield-alt" style="font-size:3.5rem;color:rgba(255,255,255,.85)"></i></div>
+        <div class="ms-tile-visual relative overflow-hidden">
+          <img src="./images/Cybersecurity day18(11_05_2024).jpg" alt="" class="absolute inset-0 w-full h-full">
+        </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">Cybersecurity</h3>
           <p class="ms-tile-desc">Security audits, penetration testing, compliance, and enterprise-grade data protection solutions.</p>
@@ -381,7 +371,9 @@
         </div>
       </div>
       <div class="ms-tile reveal delay-4">
-        <div class="ms-tile-visual" style="background:#4338CA;"><i class="fas fa-rocket" style="font-size:3.5rem;color:rgba(255,255,255,.85)"></i></div>
+        <div class="ms-tile-visual relative overflow-hidden">
+          <img src="./images/Don’t Fall Behind on Technology_ 11 Courses That Can Update Your Skills This Year.jpg" alt="" class="absolute inset-0 w-full h-full">
+        </div>
         <div class="ms-tile-body">
           <h3 class="ms-tile-title">Digital Transformation</h3>
           <p class="ms-tile-desc">End-to-end strategies that modernise legacy operations and accelerate your competitive advantage.</p>
@@ -401,8 +393,8 @@
 ============================================================ -->
 <section class="border-t border-slate-100 dark:border-slate-800">
   <div class="ms-feature">
-    <div class="ms-feature-visual" style="background:#1E40AF;">
-      <i class="fas fa-code"></i>
+    <div class="ms-feature-visual relative overflow-hidden">
+      <img src="./images/Boost Your Business with KD Marketing Digital Services 🚀.jpg" alt="" class="absolute inset-0 w-full h-full">
     </div>
     <div class="ms-feature-content reveal-right">
       <span class="ms-feature-tag"><i class="fas fa-code mr-1"></i>Custom Software</span>
@@ -442,8 +434,8 @@
         <a href="services.html#ai" class="btn-ms btn-ms-outline">Learn more</a>
       </div>
     </div>
-    <div class="ms-feature-visual" style="background:#1E1B4B;">
-      <i class="fas fa-brain"></i>
+    <div class="ms-feature-visual relative overflow-hidden">
+      <img src="./images/Makola - Accra - Ghana.jpg" alt="" class="absolute inset-0 w-full h-full">
     </div>
   </div>
 </section>
